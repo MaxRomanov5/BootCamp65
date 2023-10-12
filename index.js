@@ -13,3 +13,10 @@ const alexanderSalary = Number.parseInt(Alexander);
 const dustinSalary = Number.parseInt(Dustin);
 console.log(((israelSalary + alexanderSalary + dustinSalary) / 3).toFixed());
 Alexander = alexanderSalary + 200 + '$';
+//Знайти в рядку слово '//Знайти в рядку слово 'spam' та замінити його на '@@@@'
+
+//const str = 'I gEt sO much sPam at wOrk.';' та замінити його на '@@@@'
+
+const str = 'I gEt sO much sPam at wOrk.';
+const correctStr = str.toLowerCase().replace('spam', '@@@@');
+console.log(correctStr);
