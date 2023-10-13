@@ -26,9 +26,32 @@
 // числа від max до min за спаданням
 // Додайте усі парні числа від min до max
 
-const max = 50;
-const min = 23;
+// const max = 50;
+// const min = 48;
 
-for (let index = max; index > min; index-=1) {
-    console.log(index); 
+// let sum = 0;
+
+// for (let index = max; index >= min; index -= 1) {
+//   if (index % 2 === 0) {
+//     sum += index;
+//   }
+//   console.log(index);
+// }
+
+// console.log(`Сума парних чисел дорівнює, ${sum}`);
+
+//TODO:===================================
+//Вивести в консоль всі літери з рядка без пробілів
+
+const str = "Hello Javascript!";
+
+for (let i = 0; i < str.length; i++) {
+  if (str[i] === " ") {
+    continue;
+  }
+  console.log(`${str[i]}`);
 }
+
+//наступний хто буде писати код, я того в чаті назву Кошенятком
+
+// а можна вже комітити?
