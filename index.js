@@ -66,14 +66,32 @@
 //Робити перевірку,що користувач ввів саме число,
 //а не довільний набір символів, не потрібно.
 
-let number;
+/*
+let inputValue = prompt('Введіть число');
+let check = true;
 let total = 0;
-let check = true
+console.log(!'0');
+
 do {
-     number = prompt('Введіть, будь ласка, число');
-     if(number){
-        total += Number(number);
-     }
-    
-} while (number != 'null');
-console.log(total);
+    if (inputValue) {
+        console.log(inputValue);
+
+        check = true;
+        total += Number(inputValue);
+        inputValue = prompt("Введіть число");
+    } else {
+        check = false;
+        alert(`Загальна сума чисел дорівнює ${total}`);
+    }
+} while (check)*/
+
+/*
+const str = "abcd";
+for (let i = 0; i <= str.length - 1; i++) {
+    console.log(str[i])
+    if (i === str.length - 1) {
+        for (let j = str.length - 2; j >= 0; j--) {
+            console.log(str[j])
+        }
+    }
+}*/
