@@ -110,13 +110,31 @@ do {
 // console.log(amount);
 
 // Порахувати к - сть букв о у рядку
-const str = "Hello Javascripto!";
-let totalLetters = 0;
+// const str = "Hello Javascripto!";
+// let totalLetters = 0;
 
-for (let i = 0; i < str.length; i++) {
-  console.log(str[i]);
-  if (str[i].toLowerCase() === "e") {
-    totalLetters += 1;
-  }
+// for (let i = 0; i < str.length; i++) {
+//   console.log(str[i]);
+//   if (str[i].toLowerCase() === "e") {
+//     totalLetters += 1;
+//   }
+// }
+// console.log(totalLetters);
+
+//замінити кожну літеру а  , на b;
+let str = "Hello Javascripto!";
+let newStr = ''
+console.log(str);
+for ( let i = 0; i < str.length; i++) {
+
+    console.log('itertion start');
+    console.log(str[i]);
+    if (str[i].toLowerCase() === 'a'){
+newStr+='b'
+    }else{
+        newStr+=str[i]
+    }
 }
-console.log(totalLetters);
+
+console.log(newStr);
+
