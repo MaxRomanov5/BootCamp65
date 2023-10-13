@@ -95,7 +95,6 @@ do {
 //     }
 // }
 
-
 //Порахувати кількість ітерацій між числами min та max, якщо крок дорівнює step.
 // const min = 10;
 // const max = 50;
@@ -103,10 +102,21 @@ do {
 // let amount = 0;
 
 // for (let i = min; i <= max; i += step) {
-//     amount += 1; 
+//     amount += 1;
 
-   
 //    console.log('відбувається ітерація');
 // }
 
 // console.log(amount);
+
+// Порахувати к - сть букв о у рядку
+const str = "Hello Javascripto!";
+let totalLetters = 0;
+
+for (let i = 0; i < str.length; i++) {
+  console.log(str[i]);
+  if (str[i].toLowerCase() === "e") {
+    totalLetters += 1;
+  }
+}
+console.log(totalLetters);
