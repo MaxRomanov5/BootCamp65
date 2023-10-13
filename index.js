@@ -65,13 +65,15 @@
 //кнопку Cancel, показати alert з рядком "Загальна сума введених чисел дорівнює [число]."
 //Робити перевірку,що користувач ввів саме число,
 //а не довільний набір символів, не потрібно.
+
 let number;
 let total = 0;
+let check = true
 do {
-     number = Number(prompt('Введіть, будь ласка, число'));
-    if (number) {
-        total += number;
-    }
+     number = prompt('Введіть, будь ласка, число');
+     if(number){
+        total += Number(number);
+     }
     
-} while (number);
+} while (number != 'null');
 console.log(total);
